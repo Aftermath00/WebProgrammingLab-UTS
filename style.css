@@ -1,0 +1,140 @@
+.adel {
+  border-radius: 12px;
+  width: 28px;
+  height: 33px;
+}
+.carousel-item {
+  height: 100vh;
+  min-height: 300px;
+  background: no-repeat scroll center scroll;
+  background-size: cover;
+}
+.carousel-item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000;
+  opacity: 0.5;
+}
+.carousel-caption {
+  bottom: 180px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.carousel-caption h5 {
+  font-size: 75px;
+  font-weight: 500;
+}
+.carousel-caption p {
+  font-size: 18px;
+  top: 2rem;
+}
+.slider-btn {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.slider-btn .btn {
+  background-color: #8e806a;
+  border-radius: 0;
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  border-radius: 12px;
+}
+.slider-btn .btn:hover {
+  background-color: #ffe6bc;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+.slider-btn .btn:active {
+  background-color: #ffe6bc;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+#contact {
+  background-color: #464e2e;
+}
+#contact {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #f5f0e8;
+}
+#posts {
+  margin: 10px;
+  padding: 10px;
+}
+.bi {
+  font-size: 20px;
+}
+.fa-earth-americas {
+  font-size: 20px;
+}
+.tabs {
+  position: relative;
+  top: 50%;
+  bottom: 50%;
+  width: 1050px;
+  height: 500px;
+  transform: translatex(7.5%);
+  background-color: #553939;
+  padding: 20px 30px;
+  overflow: hidden;
+  border-radius: 40px;
+}
+.tabs .tab-header {
+  height: 75px;
+  display: flex;
+  align-items: center;
+}
+.tabs .tab-header > div {
+  width: calc (100% / 3);
+  text-align: center;
+  color: #a77979;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 14px;
+  text-transform: uppercase;
+  outline: none;
+}
+.tabs .tab-header > div > i {
+  display: block;
+  margin-bottom: 5px;
+}
+.tabs .tab-header > div.active {
+  color: #c7bba8;
+}
+.tabs .tab-indicator {
+  position: relative;
+  width: calc(100% / 3);
+  height: 5px;
+  background-color: #a28f70;
+  left: 0px;
+  border-radius: 5px;
+  transition: all 500ms ease-in-out;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.tabs .tab-body {
+  position: relative;
+  height: calc(100% - 60px);
+  padding: 10px 5px;
+}
+.tabs .tab-body > div {
+  position: absolute;
+  top: -200%;
+  opacity: 0;
+  margin-top: 5px;
+  transform: scale(0.9);
+  transition: opacity 500ms ease-in-out 0ms, transform 500ms ease-in-out 0ms;
+}
+.tabs .tab-body > div.active {
+  top: 0px;
+  opacity: 1;
+  transform: scale(1);
+  margin-top: 0px;
+}
+.tabs .tab-body img {
+  width: 250px;
+  height: 250px;
+}
