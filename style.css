@@ -55,14 +55,20 @@
 }
 #contact {
   background-color: #464e2e;
+  height: 90vh;
+  min-height: 300px;
 }
 #contact {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: #f5f0e8;
 }
+.container-contact .row {
+  margin-top: 50px;
+}
 #posts {
-  margin: 10px;
-  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
 }
 .bi {
   font-size: 20px;
@@ -76,65 +82,73 @@
   bottom: 50%;
   width: 1050px;
   height: 500px;
-  transform: translatex(7.5%);
+  transform: translatex(10%);
   background-color: #553939;
-  padding: 20px 30px;
+  padding: 30px 20px;
   overflow: hidden;
   border-radius: 40px;
 }
 .tabs .tab-header {
-  height: 75px;
-  display: flex;
-  align-items: center;
+  float: left;
+  width: 180px;
+  height: 100%;
+  border-right: 2px solid #ccc;
+  padding: 50px 0px;
 }
 .tabs .tab-header > div {
-  width: calc (100% / 3);
-  text-align: center;
-  color: #a77979;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
   font-weight: 600;
+  color: #666;
   cursor: pointer;
-  font-size: 14px;
-  text-transform: uppercase;
-  outline: none;
+  padding-left: 10px;
 }
-.tabs .tab-header > div > i {
-  display: block;
-  margin-bottom: 5px;
-}
+.tabs .tab-header > div:hover,
 .tabs .tab-header > div.active {
-  color: #c7bba8;
+  color: #ffe6bc;
 }
-.tabs .tab-indicator {
+.tabs .tab-header div i {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+.tabs .tab-content {
   position: relative;
-  width: calc(100% / 3);
-  height: 5px;
-  background-color: #a28f70;
-  left: 0px;
-  border-radius: 5px;
-  transition: all 500ms ease-in-out;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  height: 100%;
+  overflow: hidden;
 }
-.tabs .tab-body {
-  position: relative;
-  height: calc(100% - 60px);
-  padding: 10px 5px;
+.tabs .tab-content > div > i {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: #8e806a;
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  margin-bottom: 10px;
 }
-.tabs .tab-body > div {
+
+.tabs .tab-content > div {
   position: absolute;
+  text-align: center;
+  padding: 40px 20px;
   top: -200%;
-  opacity: 0;
-  margin-top: 5px;
-  transform: scale(0.9);
-  transition: opacity 500ms ease-in-out 0ms, transform 500ms ease-in-out 0ms;
+  transition: all 500ms ease-in-out;
 }
-.tabs .tab-body > div.active {
+.tabs .tab-content > div.active {
   top: 0px;
-  opacity: 1;
-  transform: scale(1);
-  margin-top: 0px;
 }
-.tabs .tab-body img {
-  width: 250px;
-  height: 250px;
+
+.tabs .tab-line {
+  position: absolute;
+  width: 4px;
+  height: 50px;
+  background: #d3cece;
+  left: 200px;
+  top: 80px;
+  transition: all 500ms ease-in-out;
 }

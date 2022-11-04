@@ -1,18 +1,20 @@
-// animated tab
-let tabHeader = document.getElementsByClassName("tab-header")[0];
-let tabIndicator = document.getElementsByClassName("tab-indicator")[0];
-let tabBody = document.getElementsByClassName("tab-body")[0];
+function _class(name) {
+  return document.getElementsByClassName(name);
+}
 
-let tabsPane = tabHeader.getElementsByTagName("div");
+let tabPanes = _class("tab-header")[0].getElementsByTagName("div");
 
-for (let i = 0; i < tabsPane.length; i++) {
-  tabsPane[i].addEventListener("click", function () {
-    tabHeader.getElementsByClassName("active")[0].classList.remove("active");
-    tabsPane[i].classList.add("active");
-    tabBody.getElementsByClassName("active")[0].classList.remove("active");
-    tabBody.getElementsByTagName("div")[i].classList.add("active");
+for (let i = 0; i < tabPanes.length; i++) {
+  tabPanes[i].addEventListener("click", function () {
+    _class("tab-header")[0].getElementsByClassName("active")[0].classList.remove("active");
+    tabPanes[i].classList.add("active");
 
-    tabIndicator.style.left = "calc(calc(100% / 3) * ${i})";
+    _class("tab-line")[0].style.top = "calc(80px + ${i*50}px)";
+
+    _class("tab-content")[0].getElementsByClassName("active")[0].classList.remove("active");
+    tabPanes[i].classList.add("active");
+
+    _class("tab-content")[0].getElementsByTagName("div")[i].classList.add("active");
   });
 }
 
@@ -40,3 +42,4 @@ form.addEventListener("submit", (e) => {
     })
     .catch((error) => console.error("Error!", error.message));
 });
+// end
