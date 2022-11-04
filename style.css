@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 .adel {
   border-radius: 12px;
   width: 28px;
@@ -110,7 +113,7 @@
 }
 .tabs .tab-header div i {
   display: inline-block;
-  margin-left: 10px;
+  margin-left: 25px;
   margin-right: 5px;
 }
 
@@ -140,9 +143,16 @@
   transition: all 500ms ease-in-out;
 }
 .tabs .tab-content > div.active {
-  top: 0px;
+  display: block;
+  top: -20px;
 }
 
+.tabs .tab-content h2,
+p {
+  color: #ccc;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 300;
+}
 .tabs .tab-line {
   position: absolute;
   width: 4px;
