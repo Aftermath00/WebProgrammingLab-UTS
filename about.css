@@ -115,12 +115,19 @@
 .about-right h1 {
   font-size: 5rem;
   text-transform: uppercase;
+  font-family: "Bebas Neue", cursive;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  line-height: 5.9rem;
 }
 .about-right h1 span {
   color: #1b263b;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  line-height: 5.9rem;
 }
 .about-right h2 {
   font-weight: 600;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  line-height: 5.9rem;
 }
 .about-btns {
   display: flex;
@@ -181,4 +188,9 @@
     position: absolute;
     width: 80%;
   }
+}
+
+.char {
+  transform: translateY(115px);
+  transition: transform 0.5s;
 }
