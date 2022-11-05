@@ -1,6 +1,3 @@
-* {
-  box-sizing: border-box;
-}
 .adel {
   border-radius: 12px;
   width: 28px;
@@ -66,12 +63,35 @@
   color: #f5f0e8;
 }
 .container-contact .row {
-  margin-top: 50px;
+  padding-top: 20px;
 }
 #posts {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  background: hsla(38, 100%, 87%, 1);
+
+  background: radial-gradient(circle, hsla(38, 100%, 87%, 1) 0%, hsla(0, 20%, 28%, 1) 83%);
+
+  background: -moz-radial-gradient(circle, hsla(38, 100%, 87%, 1) 0%, hsla(0, 20%, 28%, 1) 83%);
+
+  background: -webkit-radial-gradient(circle, hsla(38, 100%, 87%, 1) 0%, hsla(0, 20%, 28%, 1) 83%);
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFE6BC", endColorstr="#553939", GradientType=1 );
   box-sizing: border-box;
+  padding: 20px;
+}
+.container-post {
+  background: hsla(38, 100%, 87%, 1);
+
+  background: radial-gradient(circle, hsla(38, 100%, 87%, 1) 0%, hsla(0, 20%, 28%, 1) 83%);
+
+  background: -moz-radial-gradient(circle, hsla(38, 100%, 87%, 1) 0%, hsla(0, 20%, 28%, 1) 83%);
+
+  background: -webkit-radial-gradient(circle, hsla(38, 100%, 87%, 1) 0%, hsla(0, 20%, 28%, 1) 83%);
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFE6BC", endColorstr="#553939", GradientType=1 );
+  padding: 20px;
+}
+.col-tabs {
+  background-color: #f5f0e8;
 }
 .bi {
   font-size: 20px;
@@ -85,9 +105,9 @@
   bottom: 50%;
   width: 1050px;
   height: 500px;
-  transform: translatex(10%);
-  background-color: #553939;
-  padding: 30px 20px;
+  transform: translatex(5%);
+  background-color: #8e806a;
+  padding: 30px;
   overflow: hidden;
   border-radius: 40px;
 }
@@ -95,38 +115,40 @@
   float: left;
   width: 180px;
   height: 100%;
-  border-right: 2px solid #ccc;
-  padding: 50px 0px;
+  border-right: 2px solid rgb(71, 62, 62);
+  padding: 50px 20px;
+  background-color: #8e806a;
 }
 .tabs .tab-header > div {
   height: 50px;
   line-height: 50px;
   font-size: 16px;
   font-weight: 600;
-  color: #666;
+  color: rgb(57, 47, 47);
   cursor: pointer;
   padding-left: 10px;
 }
+
 .tabs .tab-header > div:hover,
 .tabs .tab-header > div.active {
   color: #ffe6bc;
 }
 .tabs .tab-header div i {
   display: inline-block;
-  margin-left: 25px;
+  margin-left: 20px;
   margin-right: 5px;
 }
-
 .tabs .tab-content {
   position: relative;
   height: 100%;
-  overflow: hidden;
+  overflow: auto;
 }
 .tabs .tab-content > div > i {
   display: inline-block;
   width: 50px;
   height: 50px;
-  background: #8e806a;
+  background: #4a453c;
+  color: white;
   font-size: 25px;
   font-weight: 600;
   text-align: center;
@@ -136,7 +158,7 @@
 }
 
 .tabs .tab-content > div {
-  position: absolute;
+  position: initial;
   text-align: center;
   padding: 40px 20px;
   top: -200%;
@@ -144,9 +166,10 @@
 }
 .tabs .tab-content > div.active {
   display: block;
-  top: -20px;
+  top: 0px;
+  height: 100%;
+  width: 100%;
 }
-
 .tabs .tab-content h2,
 p {
   color: #ccc;
@@ -156,9 +179,9 @@ p {
 .tabs .tab-line {
   position: absolute;
   width: 4px;
-  height: 50px;
+  height: 40px;
   background: #d3cece;
   left: 200px;
-  top: 80px;
+  top: 83px;
   transition: all 500ms ease-in-out;
 }
