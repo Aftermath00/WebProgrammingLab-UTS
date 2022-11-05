@@ -165,10 +165,7 @@
   transition: all 500ms ease-in-out;
 }
 .tabs .tab-content > div.active {
-  display: block;
   top: 0px;
-  height: 100%;
-  width: 100%;
 }
 .tabs .tab-content h2,
 p {
@@ -176,7 +173,7 @@ p {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 300;
 }
-.tabs .tab-line {
+/* .tabs .tab-line {
   position: absolute;
   width: 4px;
   height: 40px;
@@ -184,4 +181,4 @@ p {
   left: 200px;
   top: 83px;
   transition: all 500ms ease-in-out;
-}
+} */
