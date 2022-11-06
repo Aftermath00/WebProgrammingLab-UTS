@@ -1,7 +1,22 @@
+html {
+  scroll-behavior: smooth;
+}
 .adel {
   border-radius: 12px;
   width: 28px;
   height: 33px;
+}
+.navbar {
+  float: none;
+  left: 20%;
+  right: 30%;
+  width: 1000px;
+  margin: 20px;
+  margin-left: 150px;
+  border-radius: 20px;
+}
+.char {
+  transform: translateY(10px);
 }
 .carousel-item {
   height: 100vh;
@@ -54,41 +69,23 @@
   transform: translateY(4px);
 }
 #contact {
-  background-color: #464e2e;
-  height: 90vh;
+  background-color: #432818;
+  height: 70vh;
   min-height: 300px;
 }
 #contact {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: #f5f0e8;
 }
-.container-contact .row {
-  padding-top: 20px;
-}
 #posts {
-  background: hsla(38, 100%, 87%, 1);
-
-  background: radial-gradient(circle, hsla(38, 100%, 87%, 1) 0%, hsla(0, 20%, 28%, 1) 83%);
-
-  background: -moz-radial-gradient(circle, hsla(38, 100%, 87%, 1) 0%, hsla(0, 20%, 28%, 1) 83%);
-
-  background: -webkit-radial-gradient(circle, hsla(38, 100%, 87%, 1) 0%, hsla(0, 20%, 28%, 1) 83%);
-
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFE6BC", endColorstr="#553939", GradientType=1 );
+  background-color: #ddb892;
   box-sizing: border-box;
-  padding: 20px;
 }
 .container-post {
-  background: hsla(38, 100%, 87%, 1);
-
-  background: radial-gradient(circle, hsla(38, 100%, 87%, 1) 0%, hsla(0, 20%, 28%, 1) 83%);
-
-  background: -moz-radial-gradient(circle, hsla(38, 100%, 87%, 1) 0%, hsla(0, 20%, 28%, 1) 83%);
-
-  background: -webkit-radial-gradient(circle, hsla(38, 100%, 87%, 1) 0%, hsla(0, 20%, 28%, 1) 83%);
-
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFE6BC", endColorstr="#553939", GradientType=1 );
-  padding: 20px;
+  background-color: #ddb892;
+  padding-left: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .col-tabs {
   background-color: #f5f0e8;
@@ -100,13 +97,16 @@
   font-size: 20px;
 }
 .tabs {
+  align-self: center;
+  float: none; /*to make sure there is no active float*/
+  display: inline-block;
   position: relative;
   top: 50%;
   bottom: 50%;
   width: 1050px;
   height: 500px;
-  transform: translatex(5%);
-  background-color: #8e806a;
+  transform: translatex(7%);
+  background-color: #69140e;
   padding: 30px;
   overflow: hidden;
   border-radius: 40px;
@@ -117,14 +117,14 @@
   height: 100%;
   border-right: 2px solid rgb(71, 62, 62);
   padding: 50px 20px;
-  background-color: #8e806a;
+  background-color: #69140e;
 }
 .tabs .tab-header > div {
   height: 50px;
   line-height: 50px;
   font-size: 16px;
   font-weight: 600;
-  color: rgb(57, 47, 47);
+  color: rgb(192, 161, 161);
   cursor: pointer;
   padding-left: 10px;
 }
@@ -147,8 +147,8 @@
   display: inline-block;
   width: 50px;
   height: 50px;
-  background: #4a453c;
-  color: white;
+  background: #f2f3ae;
+  color: rgb(11, 10, 10);
   font-size: 25px;
   font-weight: 600;
   text-align: center;
