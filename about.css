@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald:400,700");
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 :root {
   --level-one: translateZ(3rem);
   --level-two: translateZ(6rem);
@@ -131,6 +131,7 @@ body {
   line-height: 1;
   color: #ffe6a7;
   text-align: left;
+  font-family: "Montserrat", sans-serif;
 }
 
 .card__back {
