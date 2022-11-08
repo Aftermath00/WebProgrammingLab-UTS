@@ -2,6 +2,7 @@ html {
   scroll-behavior: smooth;
 }
 .adel {
+  margin-left: 20px;
   border-radius: 12px;
   width: 28px;
   height: 33px;
@@ -173,12 +174,14 @@ p {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 300;
 }
-/* .tabs .tab-line {
-  position: absolute;
-  width: 4px;
-  height: 40px;
-  background: #d3cece;
-  left: 200px;
-  top: 83px;
-  transition: all 500ms ease-in-out;
-} */
+
+.content-image {
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+  transition: 0.5s ease;
+  opacity: 0.5;
+}
+.content-image:hover {
+  opacity: 1;
+}
