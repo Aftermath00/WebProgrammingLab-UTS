@@ -6,9 +6,9 @@ body {
 .navbar {
   background-color: #540b0e;
   float: none;
-  width: 500px;
-  margin: 20px;
-  margin-left: 375px;
+  width: 370px;
+  margin: 10px;
+  margin-left: 440px;
   border-radius: 20px;
 }
 .adel {
@@ -55,7 +55,7 @@ body {
 .background-left > .container {
   background-color: #fff3b0;
   width: 500px;
-  height: 400px;
+  height: 540px;
   border-radius: 20px;
   margin-top: 10px;
 }
@@ -63,11 +63,11 @@ body {
   transform: translateY(30px);
   background-color: #e09f3e;
   width: 500px;
-  height: 450px;
+  height: 540px;
   border-radius: 20px;
   align-items: center;
   justify-content: center;
-  margin-top: 35px;
+  margin-top: 25px;
 }
 .main-image {
   width: 430px;
@@ -80,7 +80,7 @@ body {
 .main-image:hover {
   display: block;
   scale: 1.5;
-  transform: translate3D(30px, -30px, 20px);
+  transform: translate3D(30px, 30px, 20px);
   transition: all 1s ease;
 }
 .col-content-L,
@@ -94,10 +94,10 @@ body {
   transform: translateY(30px);
   color: #170505;
 }
-.capt-1,
-.capt-2 {
-  font-size: 16px;
+.col-content-L h5,
+.col-content-R h5 {
+  font-size: 14px;
 }
-.capt-2 {
+.italic {
   font-style: italic;
 }
