@@ -92,3 +92,6 @@ body {
   transform: translateY(30px);
   color: #ffe6a7;
 }
+h5 {
+  font-size: 16px;
+}

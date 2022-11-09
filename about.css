@@ -23,6 +23,7 @@ body {
   display: grid;
   font-family: "Oswald", sans-serif;
 }
+/* navbar session */
 .navbar {
   float: none;
   width: 300px;
@@ -30,13 +31,20 @@ body {
   margin-left: 485px;
   border-radius: 20px;
 }
-
+.navbar li :hover {
+  background-color: rgb(116, 80, 80);
+  border-radius: 7px;
+}
 .adel {
   border-radius: 12px;
   width: 28px;
   height: 33px;
   display: block;
 }
+/* navbar session ends */
+
+/* about start : Ini ngebuat wrap untuk satu halaman, terus ngebagi dua halaman jadi kanan kiri */
+/* Sekalian ngebuat cards yang bisa muter jadi 3D */
 .about-wrapper {
   height: 100vh;
 }
@@ -132,8 +140,15 @@ body {
   color: #ffe6a7;
   text-align: left;
   font-family: "Montserrat", sans-serif;
+  font-size: 16px;
 }
-
+.card__body:hover {
+  scale: 1.1;
+  color: rgb(213, 139, 164);
+  right: 10px;
+  text-shadow: #000;
+  transition: all 0.5s ease;
+}
 .card__back {
   transform: rotateY(0.5turn);
   color: var(--clr);
@@ -255,7 +270,8 @@ body {
   border-color: #e0e1dd;
   color: rgb(52, 43, 43);
 }
-
+/* about ends */
+/* Nyoba dikit css responsive */
 @media screen and (min-width: 992px) {
   .about-wrapper {
     display: grid;
@@ -270,6 +286,7 @@ body {
     width: 80%;
   }
 }
+/* Ini karena overlap makanya diturunin dikit biar animasinya pas*/
 .char {
   transform: translateY(250px);
   transition: transform 0.5s;

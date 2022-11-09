@@ -1,7 +1,9 @@
-Web Programming UTS Lab 5
-Asisten Lab : John Sembiring
+_Web Programming UTS Lab 5_
+
+_Asisten Lab : John Sembiring_
 
 Site Access : aftermath00.github.io/WebProgrammingLab-UTS
+Completion Time : 7 days (Including laze days)
 
 Features :
 
@@ -11,3 +13,6 @@ Features :
 - Gsap for text
 - AOS for entrance animation
 - 3D card flip
+
+Warning! : This website ain't responsive, it was made for laptop query only. Will be responsive anytime soon !
+You may explore every features here ! Enjoy !

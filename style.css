@@ -2,6 +2,7 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+/* Navbar  */
 .adel {
   margin-left: 20px;
   border-radius: 12px;
@@ -15,6 +16,9 @@ html {
   margin-left: 150px;
   border-radius: 20px;
 }
+/* Navbar ends */
+
+/*  Carousel's Components */
 .char {
   transform: translateY(10px);
 }
@@ -69,6 +73,9 @@ html {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+/* Carousel ends */
+
+/* Contact */
 #contact {
   background-color: #432818;
   height: 80vh;
@@ -78,6 +85,9 @@ html {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: #f5f0e8;
 }
+/* Contact ends */
+
+/* Posts Section : isinya ada tabs di dalemnya ada cards yang connect ke setiap landing page */
 #posts {
   background-color: #ddb892;
   box-sizing: border-box;
@@ -187,3 +197,4 @@ p {
   transform: translate3d(10px, 100px, 10px);
   scale: 1.2;
 }
+/* Posts's Section ends */
