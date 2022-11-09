@@ -184,4 +184,6 @@ p {
 }
 .content-image:hover {
   opacity: 1;
+  transform: translate3d(10px, 100px, 10px);
+  scale: 1.2;
 }
