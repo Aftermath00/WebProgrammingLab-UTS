@@ -4,6 +4,9 @@ _Asisten Lab : John Sembiring_
 
 Site Access : aftermath00.github.io/WebProgrammingLab-UTS
 
+Name : Rizky Azmi Swandy
+Student ID : 211401051
+Laboratory : 5
 Completion Time : 7 days (Including laze days)
 
 Features :
