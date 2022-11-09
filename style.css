@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 .adel {
   margin-left: 20px;
@@ -9,8 +10,8 @@ html {
 }
 .navbar {
   float: none;
-  left: 20%;
-  right: 30%;
+  /* left: 20%;
+  right: 30%; */
   width: 1000px;
   margin: 20px;
   margin-left: 150px;
@@ -49,6 +50,7 @@ html {
   font-size: 18px;
   top: 2rem;
 }
+
 .slider-btn {
   margin-top: 30px;
   margin-bottom: 10px;
