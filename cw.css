@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:400,700");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+:root {
+  --level-one: translateZ(3rem);
+  --level-two: translateZ(6rem);
+  --level-three: translateZ(9rem);
+
+  --fw-normal: 400;
+  --fw-bold: 700;
+
+  --clr: #b7c9e5;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  font-family: "Oswald", sans-serif;
+}
+/* navbar session */
+.navbar {
+  float: none;
+  width: 350px;
+  margin: 20px;
+  margin-left: 455px;
+  border-radius: 20px;
+}
+.navbar li {
+  background-color: rgb(64, 55, 55);
+  border-radius: 7px;
+}
+.navbar li :hover {
+  background-color: rgb(116, 80, 80);
+  border-radius: 7px;
+}
+.adel {
+  border-radius: 12px;
+  width: 28px;
+  height: 33px;
+  display: block;
+}
+/* navbar session ends */
+
+/* about start : Ini ngebuat wrap untuk satu halaman, terus ngebagi dua halaman jadi kanan kiri */
+/* Sekalian ngebuat cards yang bisa muter jadi 3D */
+.about-wrapper {
+  height: 100vh;
+}
+.about-left {
+  position: absolute;
+  padding-top: 65px;
+  background-color: #f2a65a;
+  display: grid;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #fff;
+}
+.about-left > .card {
+  background: #6f1d1b;
+  width: 400px;
+  border-radius: 5%;
+  box-shadow: 0 0 20px #f2e8cf;
+}
+.card__content {
+  border-radius: 5%;
+  text-align: center;
+  position: relative;
+  padding: 15em 5em;
+  transition: transform 3s;
+  background: rgb(0, 0, 0);
+  transform-style: preserve-3d;
+}
+
+.card:hover .card__content {
+  transform: rotateY(0.5turn);
+}
+
+.card__front,
+.card__back {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5em 3em;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  display: grid;
+  align-content: center;
+}
+
+.card__front {
+  background-color: var(--clr);
+  background-image: url(img/kedubes.jpg);
+  background-size: cover;
+  background-blend-mode: multiply;
+  color: #333;
+  border-radius: 5%;
+}
+
+.card__front::before {
+  content: "";
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+}
+
+.card__title {
+  color: #fff;
+  text-shadow: 0 2px 2px #000;
+  font-size: 2.5rem;
+  transform: var(--level-three);
+  order: 2;
+  text-transform: uppercase;
+}
+
+.card__subtitle {
+  color: #ffff;
+  transform: var(--level-two);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 0.8rem;
+  font-weight: var(--fw-bold);
+  opacity: 0.7;
+}
+
+.card__body {
+  transform: var(--level-two);
+  font-weight: var(fw-normal);
+  font-size: 1.2rem;
+  line-height: 1;
+  color: #ffe6a7;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+.card__back {
+  transform: rotateY(0.5turn);
+  color: var(--clr);
+  background: #432818;
+  border-radius: 5%;
+}
+.card__back::before {
+  content: "";
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+}
+/* abour right */
+.about-right {
+  position: absolute;
+  padding-top: 65px;
+  background-color: #6f1d1b;
+  display: grid;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #fff;
+}
+.about-right > .card {
+  background: #6f1d1b;
+  width: 600px;
+  border-radius: 5%;
+  box-shadow: 0 0 20px #f2e8cf;
+}
+.card__content_right {
+  border-radius: 5%;
+  text-align: center;
+  position: relative;
+  padding: 15em 5em;
+  transition: transform 3s;
+  background: rgb(0, 0, 0);
+  transform-style: preserve-3d;
+}
+
+.card:hover .card__content_right {
+  transform: rotateY(0.5turn);
+}
+
+.card__front_right,
+.card__back_right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5em 3em;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  display: grid;
+  align-content: center;
+}
+
+.card__front_right {
+  background-color: #432818;
+  color: #333;
+  border-radius: 5%;
+}
+
+.card__front_right::before {
+  content: "";
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+}
+
+.card__body {
+  transform: var(--level-two);
+  font-weight: var(fw-normal);
+  font-size: 1.2rem;
+  line-height: 1.4;
+  color: #ffe6a7;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+.card__back_right {
+  transform: rotateY(0.5turn);
+  color: var(--clr);
+  background: #432818;
+  border-radius: 5%;
+}
+.card__back_right::before {
+  content: "";
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+}
+
+/* about ends */
+/* Nyoba dikit css responsive */
+@media screen and (min-width: 992px) {
+  .about-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+  }
+
+  .about-left {
+    position: relative;
+  }
+  .about-right {
+    position: relative;
+  }
+  .about-left-content {
+    position: absolute;
+    width: 80%;
+  }
+}
+/* #6f1d1b */
